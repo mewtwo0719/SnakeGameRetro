@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+    background-color: #262525;
+    color: white;
+    cursor: url("cur.cur"), auto;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    text-shadow: black 5px 5px 0px;
+}
+.start{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start .startButton{
+    font-size: 48px;
+    color: white;
+    padding: 1em;
+}
+.start .startButton:hover{
+    color: #379956;
+}
+.game{
+    display: flex;
+}
+.field{
+    height: 100vh;
+    width: 75vw;
+    padding: 1em;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fieldWrapper{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.side{
+    height: 100vh;
+    width: 25vw;  
+    padding: 1em;
+    background-color: black;
+}
+.sideWrapper{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.gameOverScreen{
+    position: absolute;
+    top: 50%;
+    left: 37.5vw;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block{
+    width: 2vw;
+    height: 2vw;
+    border: 1px solid white;
+    border-radius:5px;
+}
+#gameOver{
+    font-size: 56px;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: black 5px 5px 0px;
+    color: #379956;
+}
+.gameOverScreen a{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2em;
+    font-size: 24px;
+}
+
+.gameOverScreen a:hover{
+    color: #379956;;
+}
+
+
+.food{
+    background-color: white;
+}
+.active{
+    background-color: green;
+}
+
+#score{
+    color: #379956;
+}
+
+.hide{
+    display: none;
+}
